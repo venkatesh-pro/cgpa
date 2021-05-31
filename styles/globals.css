@@ -1,16 +1,17 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#abbbc8, #c3b1be);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
 }

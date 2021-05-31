@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+.container {
+  background: #002d40;
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.bookImageContainer {
+  width: 240px;
+  margin: 40px auto;
+}
+.bookImage {
+  width: 100%;
+  border-radius: 20px;
+}
+.infoContainer {
+  margin: -25px auto;
+}
+.infoContainer p {
+  text-transform: capitalize;
+}
+.infoContainer p span {
+  color: #b16f22;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+.formDiv form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.formDiv form input {
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  margin: 2px;
+  padding: 4px;
+}
+.formDiv form button {
+  width: 100%;
+  margin: 10px auto;
+  padding: 4px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(#abbbc8, #c3b1be);
+  transition: 1s all ease-in-out;
+  color: rgb(27, 22, 22);
+}
+.formDiv form button:hover {
+  background: linear-gradient(#99abb9, #bea2b6);
+  transform: scale(0.99);
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    width: 290px;
+    height: 470px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 260px;
+    height: 470px;
+  }
+  .bookImageContainer {
+    width: 220px;
+  }
+  .infoContainer p {
+    font-size: 15px;
+  }
+}
+.errorMessage {
+  display: none;
+}
+.error {
+  position: absolute;
+  top: -50px;
+  left: 130px;
+}
+.pass {
+  position: absolute;
+  top: -50px;
+  left: 130px;
+}
+.errorMessageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  margin-bottom: 30px;
+  height: 40px;
+  align-items: center;
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    width: 245px;
+    height: 470px;
+  }
+  .bookImageContainer {
+    width: 200px;
+  }
+  .infoContainer p {
+    font-size: 14px;
+  }
+}
